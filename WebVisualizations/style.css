@@ -1,0 +1,122 @@
+/* Body background */
+body {
+    background-color: whitesmoke;
+}
+
+/* navbar styling  */
+.navbar {
+    background-color: white;
+    font-size: 20px;
+}
+
+/* Navbar-brand styling for the Latitude link */
+.navigation .navbar-brand {
+    color: white;
+    margin-left: 20px;
+    padding: 10px; 
+    font-weight: bold;
+    background-color: rgb(26, 170, 146);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Styling navbar link when hover on it - ref https://www.w3schools.com/cssref/sel_hover.asp*/
+.nav-link:hover{
+    background-color:rgb(212, 205, 205);
+   }
+
+a {
+    color: black;
+    font-size: 15px;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+/* Title Class styling */
+.title {
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(26, 170, 146);
+}
+
+/* Paragraph text styling */
+p {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Box Class styling used for all visualization pages */
+.box {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px;
+    }
+
+/* Setting Image height and width to 100% */
+img {
+    width: 100%;
+    height: 100%;
+}
+/* Setting Image height and width to 60% for the landing page only */
+.image-float-left{
+    width:60% ;
+    height:60% ;
+    float: left;
+}
+
+/* Styling Link/Image border in visualizations when hover on it - ref https://www.w3schools.com/cssref/sel_hover.asp*/
+.active,.figure:hover {
+    border-style: solid;
+    border-color: rgb(26, 170, 146);
+
+}
+
+/* Table styling for Data page*/
+.table {
+    font-size: 14px;
+}
+
+/* Footer - guide https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+footer {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-color: rgb(26, 170, 146);
+}
+
+/* Media Query for navbar and background color change when the screen is viewed below 992px(i.e in medium & small screens)*/
+@media(max-width: 991px) {
+
+    body {
+        background-color: white;
+    }
+
+    .navbar-expand-lg {
+        background-color: rgb(26, 170, 146);
+    }
+
+   .navbar {
+        padding: 0px;
+    }
+
+    .nav-link{
+        margin-top: 10px;
+    }
+
+    .navbar div {
+            background-color: white;
+    } 
+  
+}
